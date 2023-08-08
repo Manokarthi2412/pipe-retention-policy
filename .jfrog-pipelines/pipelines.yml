@@ -7,8 +7,6 @@ pipelines:
     steps:
       - name: any_step
         type: Bash
-        configuration:
-          sourceArtifactory: mkartifactory
         execution:
           onExecute:
             - echo “get things done”
