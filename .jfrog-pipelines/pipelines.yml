@@ -1,0 +1,13 @@
+pipelines:
+  - name: pipeline_name
+    configuration:
+      retentionPolicy:
+        maxAgeDays: 1
+        minRuns: 1
+    steps:
+      - name: any_step
+        type: Bash
+        configuration:
+        execution:
+          onExecute:
+            - echo “get things done”
